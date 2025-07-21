@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ✅ SEO Meta Tags -->
+  <title>BMI Calculator - Free Online Body Mass Index Tool</title>
+  <meta name="description" content="Calculate your BMI (Body Mass Index) instantly. This free online tool helps you check if you're underweight, normal, overweight, or obese.">
+  <meta name="keywords" content="BMI calculator, body mass index, health, fitness, weight calculator, BMI tool">
+  <meta name="author" content="Your Name">
+
+  <!-- ✅ Open Graph Tags -->
+  <meta property="og:title" content="BMI Calculator - Free Online Body Mass Index Tool" />
+  <meta property="og:description" content="Check your BMI instantly with this simple, fast, and free BMI calculator." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glistening-brioche-9f165d.netlify.app/" />
+  <!-- Optional: Replace with your image or remove if not used -->
+  <!-- <meta property="og:image" content="https://glistening-brioche-9f165d.netlify.app/images/og-image.jpg" /> -->
+
+  <!-- ✅ Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BMI Calculator - Free Online Tool" />
+  <meta name="twitter:description" content="Easily calculate your Body Mass Index with this free tool." />
+  <!-- Optional: Replace with your image or remove -->
+  <!-- <meta name="twitter:image" content="https://glistening-brioche-9f165d.netlify.app/images/og-image.jpg" /> -->
+
+  <!-- ✅ Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 30px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" required />
+
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" required />
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function calculateBMI() {
+      const weight = parseFloat(document.getElementById("weight").value);
+      const height = parseFloat(document.getElementById("height").value);
+
+      if (isNaN(weight) || isNaN(height) || height === 0) {
+        document.getElementById("result").innerHTML = "<p>Please enter valid numbers.</p>";
+        return;
+      }
+
+      const heightM = height / 100;
+      const bmi = weight / (heightM * heightM);
+      let category = "";
+
+      if (bmi < 18.5) category = "Underweight";
+      else if (bmi < 25) category = "Normal weight";
+      else if (bmi < 30) category = "Overweight";
+      else category = "Obese";
+
+      document.getElementById("result").innerHTML = `
+        <h2>Your BMI: ${bmi.toFixed(2)}</h2>
+        <p>Category: <strong>${category}</strong></p>
+      `;
+    }
+  </script>
+</body>
+</html>
