@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h3, p {
+    color: #333;
+}
