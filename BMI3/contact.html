@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BMI Calculator</title>
+  <meta name="description" content="Get in touch with the BMI Calculator team. Send us your questions, feedback, or suggestions.">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Common Header with Navigation -->
+    <header class="app-header">
+      <h1><i class="fas fa-heart-pulse"></i> BMI CALCULATOR</h1>
+      <p>Get in touch with us - we'd love to hear from you</p>
+      
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="privacy.html" class="nav-link"><i class="fas fa-shield-alt"></i> Privacy</a>
+        <a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </header>
+    
+    <!-- Contact page content -->
+    <div class="content-card">
+      <h2 class="page-title">
+        <i class="fas fa-envelope"></i>
+        Contact Us
+      </h2>
+      
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div>
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">
+            <i class="fas fa-paper-plane"></i> Send Us a Message
+          </h3>
+          
+          <form id="contactForm" style="margin-top: 20px;">
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+              <select id="subject" class="form-control" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="bug">Bug Report</option>
+                <option value="feature">Feature Request</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message"><i class="fas fa-comment"></i> Message</label>
+              <textarea id="message" class="form-control" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox" id="newsletter" style="margin: 0;">
+                <span>Subscribe to our newsletter for health tips and updates</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div>
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">
+            <i class="fas fa-info-circle"></i> Contact Information
+          </h3>
+          
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Address</h4>
+                <p>123 Health Street<br>Wellness City, HC 54321<br>United Kingdom</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+44 (0) 20 7123 4567<br>Monday-Friday: 9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>contact@bmicalculator.com<br>support@bmicalculator.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Business Hours</h4>
+                <p>Monday-Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Social Media -->
+          <div style="margin-top: 2rem;">
+            <h4 style="color: var(--primary); margin-bottom: 1rem;">
+              <i class="fas fa-share-alt"></i> Follow Us
+            </h4>
+            <div style="display: flex; gap: 1rem;">
+              <a href="#" class="btn btn-secondary" style="padding: 0.75rem; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-secondary" style="padding: 0.75rem; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-secondary" style="padding: 0.75rem; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-secondary" style="padding: 0.75rem; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="content-card">
+      <h2 class="page-title">
+        <i class="fas fa-question-circle"></i>
+        Frequently Asked Questions
+      </h2>
+      
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary>Is the BMI calculator free to use?</summary>
+          <p>Yes, our BMI calculator is completely free to use with no registration required. We believe health tools should be accessible to everyone.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>How accurate is the BMI calculation?</summary>
+          <p>Our calculator uses the standard BMI formula recommended by the World Health Organization (WHO). It provides a reliable estimate for most adults, though it may not be accurate for athletes, pregnant women, or the elderly.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Do you store my personal health data?</summary>
+          <p>No, we do not store any personal health data. All calculations are performed locally in your browser and are not transmitted to our servers. Your privacy is our priority.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Can I use this calculator on mobile devices?</summary>
+          <p>Absolutely! Our BMI calculator is fully responsive and works perfectly on smartphones, tablets, and desktop computers. The design adapts to your screen size for the best experience.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>What should I do if my BMI is outside the normal range?</summary>
+          <p>BMI is just one health indicator. If your BMI is outside the normal range, consider consulting with a healthcare professional who can provide personalized advice based on your overall health profile.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>How often should I check my BMI?</summary>
+          <p>For general health monitoring, checking your BMI monthly or quarterly is sufficient. However, if you're actively working on weight management, weekly checks can help track progress.</p>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Can I suggest new features or improvements?</summary>
+          <p>We'd love to hear your suggestions! Please use the contact form above or email us directly. We're always looking to improve our tools based on user feedback.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Common Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+    <p>© 2025 BMI Calculator | This tool provides general information only. Consult a healthcare professional for medical advice.</p>
+  </footer>
+
+  <!-- Shared JavaScript -->
+  <script>
+    // Navigation highlighting
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav-link').forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if (linkPage === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const button = this.querySelector('button[type="submit"]');
+      const originalText = button.innerHTML;
+      
+      // Show loading state
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      button.disabled = true;
+      
+      // Simulate form submission
+      setTimeout(() => {
+        // Show success message
+        const successMessage = document.createElement('div');
+        successMessage.innerHTML = `
+          <div style="background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 12px; margin-top: 1rem; border-left: 4px solid #10b981;">
+            <i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>
+            <strong>Message sent successfully!</strong> We'll get back to you within 24 hours.
+          </div>
+        `;
+        
+        this.appendChild(successMessage);
+        
+        // Reset form
+        this.reset();
+        
+        // Reset button
+        button.innerHTML = originalText;
+        button.disabled = false;
+        
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+          successMessage.remove();
+        }, 5000);
+        
+      }, 2000);
+    });
+
+    // Form validation styling
+    document.querySelectorAll('.form-control').forEach(input => {
+      input.addEventListener('input', function() {
+        if (this.checkValidity()) {
+          this.style.borderColor = '#10b981';
+        } else {
+          this.style.borderColor = '#e5e7eb';
+        }
+      });
+      
+      input.addEventListener('invalid', function() {
+        this.style.borderColor = '#ef4444';
+        this.style.animation = 'shake 0.5s ease-in-out';
+        setTimeout(() => this.style.animation = '', 500);
+      });
+    });
+
+    // Character counter for message textarea
+    const messageTextarea = document.getElementById('message');
+    const charCounter = document.createElement('div');
+    charCounter.style.cssText = 'text-align: right; font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;';
+    messageTextarea.parentNode.appendChild(charCounter);
+
+    messageTextarea.addEventListener('input', function() {
+      const remaining = 500 - this.value.length;
+      charCounter.textContent = `${this.value.length}/500 characters`;
+      
+      if (remaining < 50) {
